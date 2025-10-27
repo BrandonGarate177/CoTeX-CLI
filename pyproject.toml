@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cotex-cli"
+version = "0.0.1"
+description = "CoTeX – terminal-native, project-aware AI helper"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer",
+    "rich",
+    "pydantic",
+    "requests",
+    "gitpython",
+    "chromadb",
+    "python-dotenv",
+    "tiktoken"
+]
+
+[project.scripts]
+cotex = "cotex.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]

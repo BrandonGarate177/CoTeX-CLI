@@ -1,0 +1,8 @@
+typer
+rich
+pydantic
+requests
+gitpython
+chromadb
+python-dotenv
+tiktoken
